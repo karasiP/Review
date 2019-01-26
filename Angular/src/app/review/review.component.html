@@ -1,0 +1,48 @@
+<app-toptoolbar></app-toptoolbar>
+<div class="blackground" align="center">
+  <div class="form">
+    <div align="center">
+      <p><font size="10">ผู้ใช้งาน</font></p>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-select placeholder="Username"[(ngModel)]="userIdSelect" (ngModelChange)="test($event)" >
+            <mat-option *ngFor="let user of users" [value]="user.user_id">
+              {{user.username}}
+            </mat-option>
+          </mat-select>
+
+          <mat-select placeholder="Item"[(ngModel)]="itemIdSelect" (ngModelChange)="test($event)" >
+              <mat-option *ngFor="let item of items" [value]="item.item_id">
+                {{item.name}}
+              </mat-option>
+            </mat-select>
+
+            <mat-select placeholder="Proposal"[(ngModel)]="propIdSelect" (ngModelChange)="test($event)" >
+              <mat-option *ngFor="let proposal of proposals" [value]="proposal.propos_id">
+                {{proposal.status}}
+              </mat-option>
+            </mat-select>
+
+        </mat-card-header>
+      </mat-card>
+    </div>
+    <br>
+    <br>
+    <br>
+   <div align="center">
+    <p><font size="10">ให้คะแนนผู้ใช้</font></p>
+    <br>
+    <br>
+    <mat-star-rating [rating]="rating"  [starCount]="5" [color]="warn" (ratingUpdated)="onRatingChanged($event)"></mat-star-rating>
+    </div>
+    <br>
+    <br>
+    <div class="example-form">
+      <mat-form-field class="example-full-width">
+        <textarea input matInput [(ngModel)]="comments" type="text" placeholder="เขียนรีวิวอะไรบางอย่างสิ....."></textarea>
+      </mat-form-field>
+    </div>
+    <button mat-flat-button (click)="save()">ส่ง</button>
+    </div>
+  </div>
+
