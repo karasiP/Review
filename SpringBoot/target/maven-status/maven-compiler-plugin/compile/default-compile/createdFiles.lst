@@ -1,0 +1,12 @@
+COM\SUT\SA\Group22\iSwap\entity\Review.class
+COM\SUT\SA\Group22\iSwap\controller\UserController.class
+COM\SUT\SA\Group22\iSwap\repository\ItemRepository.class
+COM\SUT\SA\Group22\iSwap\repository\ProposalRepository.class
+COM\SUT\SA\Group22\iSwap\controller\ProposalController.class
+COM\SUT\SA\Group22\iSwap\repository\UserRepository.class
+COM\SUT\SA\Group22\iSwap\entity\Item.class
+COM\SUT\SA\Group22\iSwap\controller\ReviewController.class
+COM\SUT\SA\Group22\iSwap\entity\User.class
+COM\SUT\SA\Group22\iSwap\repository\ReviewRepository.class
+COM\SUT\SA\Group22\iSwap\controller\ItemController.class
+COM\SUT\SA\Group22\iSwap\entity\Proposal.class
